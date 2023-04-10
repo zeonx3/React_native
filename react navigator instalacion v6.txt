@@ -1,0 +1,22 @@
+- se añadió en el documento babel.config.js:
+plugins: ['react-native-reanimated/plugin'],
+
+-se corrió el comando en consola:
+
+npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle
+
+-en consola:
+
+cd android
+
+- Luego:
+
+./gradlew assembleRelease
+
+- Siempre abro dos terminales donde corro los comandos para simulador:
+
+-npx react-native start
+
+-npx react-native run-android
+
+Así lo solucione.
